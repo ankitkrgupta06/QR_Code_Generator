@@ -50,3 +50,27 @@ body{
     margin: 20px 0;
     font-weight: 500;
 }
+
+.container imgBox{
+    align-items: center;
+    justify-content: center;
+}
+#imgBox{
+    align-items: center;
+    width: 200px;
+    max-height: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px top;
+    border: 1px solid #d1d1d1;
+}
