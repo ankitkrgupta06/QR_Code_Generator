@@ -51,22 +51,28 @@ body{
     font-weight: 500;
 }
 
-.container imgBox{
+.container #imgBox img{
     align-items: center;
     justify-content: center;
 }
 #imgBox{
-    align-items: center;
     width: 200px;
     max-height: 0px;
     border-radius: 5px;
     overflow: hidden;
     transition: max-height 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
 }
 
 #imgBox img{
     width: 100%;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #imgBox.show-img{
